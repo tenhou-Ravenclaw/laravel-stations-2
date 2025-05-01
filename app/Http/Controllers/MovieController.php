@@ -8,6 +8,6 @@ class MovieController extends Controller
     public function movies()
     {
         $movies = Movie::all();
-        return view('movie', ['movies' => $movies]);
+        return view('movies', ['movies' => $movies]);
     }
 }

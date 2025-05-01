@@ -4,21 +4,21 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Movie>
+ */
 class MovieFactory extends Factory
 {
     /**
      * Define the model's default state.
      *
-     * @return array
+     * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
-            'title' => $this->faker->unique()->word,
-            'image_url' => $this->faker->imageUrl(),
-//            'published_year' => $this->faker->year,
-//            'description' => $this->faker->realText(20),
-//            'is_showing' => $this->faker->boolean,
+            'title' => $this->faker->sentence(10),
+            'image_url' => $this->faker->imageUrl(640, 480, 'movies'),
         ];
     }
 }
