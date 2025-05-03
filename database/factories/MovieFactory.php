@@ -19,6 +19,9 @@ class MovieFactory extends Factory
         return [
             'title' => $this->faker->sentence(10),
             'image_url' => $this->faker->imageUrl(640, 480, 'movies'),
+            'published_year' => $this->faker->year(),
+            'is_showing' => false,
+            'description' => $this->faker->paragraph(3),
         ];
     }
 }
