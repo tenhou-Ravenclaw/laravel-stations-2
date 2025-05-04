@@ -41,7 +41,7 @@
                     <td>{{ $movie->title }}</td>
                     <td>{{ $movie->image_url }}</td>
                     <td>{{ $movie->published_year }}</td>
-                    <td>{{ $movie->is_showing ? '上映中' : '上映終了' }}</td>
+                    <td>{{ $movie->is_showing ? '上映中' : '上映予定' }}</td>
                     <td>{{ $movie->description }}</td>
                     <td>{{ $movie->created_at }}</td>
                     <td>{{ $movie->updated_at }}</td>
