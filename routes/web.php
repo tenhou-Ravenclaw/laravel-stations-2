@@ -11,3 +11,4 @@ Route::get('/getPractice', [PracticeController::class, 'getPractice']);
 
 Route::get('/movies', [MovieController::class, 'movies']);
 Route::get('/admin/movies', [MovieController::class, 'movie']);
+Route::get('/admin/movies/create', [MovieController::class, 'create']);
